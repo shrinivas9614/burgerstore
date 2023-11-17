@@ -26,7 +26,7 @@ const Navigation = () => {
 
   return (
     <nav
-      className="fixed w-full"
+      className="w-full"
     >
       <div className={`${styles.paddingX}`}>
         <Link
