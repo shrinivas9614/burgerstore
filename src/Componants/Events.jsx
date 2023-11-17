@@ -29,7 +29,7 @@ import { styles } from "../style";
 const Events = () => {
   return (
     <div
-      className={`${styles.paddingX} ${styles.paddingY}  relative grid xl:grid-cols-2 rounded-2xl sm:grid-cols-2 md:grid-cols-1 shadow-2xl shadow-[#b19f9f]`}
+      className={`${styles.paddingX} ${styles.paddingY}  relative grid xl:grid-cols-2 rounded-2xl sm:grid-cols-2 md:grid-cols-1 shadow-2xl shadow-[#b19f9f] overflow-hidden`}
     >
       <motion.div
         variants={fadeIn("right", "spring", 1)}
@@ -41,7 +41,7 @@ const Events = () => {
             Upcomming Events
           </p>
         </div>
-        <p className={`${styles.sectionSubText} pt-5 w-[1a5rem] xl:w-[25rem] sm:w-[12rem] font-light opacity-90`}>
+        <p className={`${styles.sectionSubText} pt-5 w-[1a5rem] xl:w-[25rem] sm:w-[12rem] md:w-[50rem] font-light opacity-90`}>
           Lorem ipsum dolor sit amet, consectetur adipisc- ing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
           sus- pendisse ultrices gravida. Risus commodo viverra maecenas
@@ -55,7 +55,7 @@ const Events = () => {
         <img
           src={burger}
           alt=""
-          className="xl:h-full h-full w-[18rem] sm:w-[18rem] md:w-[20rem]  rounded-xl"
+          className="xl:h-full h-full w-[265px] sm:w-[18rem] md:w-[50rem]  rounded-xl"
         />
       </motion.div>
       <div className="flex justify-start px-10  py-10 pt-[1rem] gap-3 ">
