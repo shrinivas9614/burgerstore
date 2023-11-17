@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { burgerIcon, delivari } from "../assets";
 import { styles } from "../style";
-import Hero from "./Hero";
+// import Hero from "./Hero";
 import { Link } from "react-router-dom";
 
 const Navigation = () => {

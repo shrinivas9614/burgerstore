@@ -38,7 +38,7 @@ const Events = () => {
             Upcomming Events
           </p>
         </div>
-        <p className="pt-5 w-[25rem] font-light opacity-90">
+        <p className="pt-5 w-[1a5rem] xl:w-[25rem] sm:w-[12rem] font-light opacity-90">
           Lorem ipsum dolor sit amet, consectetur adipisc- ing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
           sus- pendisse ultrices gravida. Risus commodo viverra maecenas
@@ -49,12 +49,12 @@ const Events = () => {
       </motion.div>
       <motion.div
         variants={fadeIn("left", "spring", 1)}
-        className="relative flex flex-col gap-10 py-10 mt-5 mr-10 "
+        className="relative flex flex-col px-5 sm:px-10 gap-9 sm:py-10 mt-5 "
       >
         <img
           src={burger}
           alt=""
-          className="xl:h-[full] sm:h-[full] w-full rounded-xl"
+          className="xl:h-[full] h-full w-[350px] rounded-xl"
         />
       </motion.div>
       <div className="flex justify-start px-10  py-10 pt-[1rem] gap-3 " >
