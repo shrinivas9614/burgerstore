@@ -1,7 +1,4 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import {
   Events,
@@ -16,17 +13,17 @@ import {
 function App() {
   return (
     <BrowserRouter>
-      <div className=" stickey bg-gradient-to-r px-3 bg-orange-400 opacity-90 w-full  ">
-        <Navigation />
-        <Hero />
+      <div className="bg-primary">
+        <div className=" top-0 bg-gradient-to-r from-orange-400 to-[#efb429] opacity-90 px-3 w-full">
+          <Navigation />
+          <Hero />
+        </div>
+        <Offers />
+        <Events />
+        <TableBookingForm />
+        <Options />
+        <div className="relative z-0"></div>
       </div>
-
-      <Offers />
-      <Options />
-      <div>
-        {/* <Events /> */}
-      </div>
-      
     </BrowserRouter>
   );
 }

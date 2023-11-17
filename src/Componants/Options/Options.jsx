@@ -1,19 +1,27 @@
-import React from "react";
 import { options } from "./optionsData";
-
+import SectionComponant from "../HOC/SectionComponant";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/motion";
+import { styles } from "../../style";
+import Events from "../Events";
 const Options = () => {
   return (
-    <div>
+    <div className="relative grid xl:grid-rows-1 sm:grid-rowss-2 md:grid-rows-1">
       <div className="text-amber-950 grid justify-center px-6 py-10 ">
         <h1 className="text-4xl font-extrabold uppercase"> Choose & enjoy </h1>
         <div className=" flex justify-center">
           <p> order burger and eat </p>
         </div>
       </div>
-      <div className=" pt-10 px-20 grid xl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 h-[15rem] gap-[200px]">
-        {options.map((option) => {
+      <motion.div className=" pt-10 px-20 grid xl:grid-cols-3 md:grid-cols-1 sm:grid-cols-1 h-[15rem] gap-[200px]">
+        {options.map((option, index) => {
           return (
-            <div key={option.name}>
+            <motion.div
+              variants={fadeIn("up", "spring", index * 0.7, 1)}
+              index={index}
+              key={option.name}
+              className={`${styles.paddingY}`}
+            >
               <div>
                 <img src={option.image} alt={option.name} />
               </div>
@@ -27,16 +35,15 @@ const Options = () => {
 
               <div className="flex justify-center pt-10">
                 <button className="px-5 py-2 bg-red-700 text-white">
-                  {" "}
-                  Order Now{" "}
+                  Order Now
                 </button>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
 
-export default Options;
+export default SectionComponant(Options, "");
