@@ -9,11 +9,11 @@ const Hero = () => {
     <div className="pt-10 md:pt-20 grid grid-cols-1 md:grid-cols-2" >
       <motion.div
         variants={fadeIn("right", "spring", 0.9)}
-        className="px-6 md:px-12 lg:px-24 relative flex justify-start gap-7 flex-col text-amber-950"
+        className="overflow-hidden px-6 md:px-12 lg:px-24 relative flex justify-start gap-7 flex-col text-amber-950"
       >
         <div className="text-amber-950 border-dashed border-x-2 border-y-2 border-amber-950 h-12 px-5 py-2 md:w-[30rem] lg:w-[30rem] xl:w-[30rem]">
           <p className="text-amber-950 font-extrabold text-center "  >
-            It is a great time to test burger
+            It is a time to test burger
           </p>
         </div>
         <div>
@@ -27,7 +27,7 @@ const Hero = () => {
       >
         <img
           src={combo}
-          className="h-[100%] w-[100%] max-h-full max-w-full"
+          className="h-[100%] w-[100%]"
           alt="Burger Combo"
         />
       </motion.div>
