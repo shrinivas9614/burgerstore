@@ -9,8 +9,10 @@ import burgerquote1 from "./burgerquote1.jpg";
 import s1 from "./s1.png";
 import about from "./about.png";
 import s2 from "./s2.png";
+import menu from "./menu.png";
 
 export {
+  menu,
   s1,
   about,
   s2,
